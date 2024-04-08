@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SalarySight</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+        <div class="container">
+        <h1 class="title">Salary Forecasting</h1>
+        <form method="post" action="/" class="predict-form">
+            <div class="form-group">
+                <label for="industry">Industry:</label>
+                <select id="industry" name="industry">
+                    <option value="Aerospace & Defense">Aerospace & Defense</option>
+                    <option value="Biotech & Pharmaceuticals">Biotech & Pharmaceuticals</option>
+                    <option value="Consulting">Consulting</option>
+                    <option value="Education">Education</option>
+                    <option value="Energy & Utilities">Energy & Utilities</option>
+                    <option value="Financial Services">Financial Services</option>
+                    <option value="Health Care">Health Care</option>
+                    <option value="Insurance">Insurance</option>
+                    <option value="Logistics & Transportation">Logistics & Transportation</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Media & Entertainment">Media & Entertainment</option>
+                    <option value="Others">Others</option>
+                    <option value="Professional Services">Professional Services</option>
+                    <option value="Real Estate & Construction">Real Estate & Construction</option>
+                    <option value="Retail & Consumer Services">Retail & Consumer Services</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Travel Agencies">Travel Agencies</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="job_title">Job Title:</label>
+                <select id="job_title" name="job_title">
+                    <option value="Analytics Manager/Consultant">Analytics Manager/Consultant</option>
+                    <option value="Business Intelligence Analyst">Business Intelligence Analyst</option>
+                    <option value="Clinical Scientist">Clinical Scientist</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Data Engineer">Data Engineer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                    <option value="Manager/Director in Data Field">Manager/Director in Data Field</option>
+                    <option value="Research Scientist">Research Scientist</option>
+                    <option value="Software Engineer (Data Focus)">Software Engineer (Data Focus)</option>
+                    <option value="Specialized Scientific Roles">Specialized Scientific Roles</option>
+                    <option value="Statistician">Statistician</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="type_of_ownership">Type of Ownership:</label>
+                <select id="type_of_ownership" name="type_of_ownership">
+                    <option value="College / University">College / University</option>
+                    <option value="Company - Private">Company - Private</option>
+                    <option value="Company - Public">Company - Public</option>
+                    <option value="Government">Government</option>
+                    <option value="Hospital">Hospital</option>
+                    <option value="Nonprofit Organization">Nonprofit Organization</option>
+                    <option value="Other Organization">Other Organization</option>
+                    <option value="Subsidiary or Business Segment">Subsidiary or Business Segment</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Company Size:</label>
+                <select id="size" name="size">
+                    <option value="1 to 50 employees">1 to 50 employees</option>
+                    <option value="51 to 200 employees">51 to 200 employees</option>
+                    <option value="201 to 500 employees">201 to 500 employees</option>
+                    <option value="501 to 1000 employees">501 to 1000 employees</option>
+                    <option value="1001 to 5000 employees">1001 to 5000 employees</option>
+                    <option value="5001 to 10000 employees">5001 to 10000 employees</option>
+                    <option value="10000+ employees">10000+ employees</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="rating" min="0" max="5" step="0.1">
+            </div>
+
+            <div class="form-group">
+                <label for="founded_year">Founded Year:</label>
+                <input type="number" id="founded_year" name="founded_year" value="2024">
+            </div>
+
+            <input type="submit" value="Predict Salary" class="btn-submit">
+        </form>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/adel-kayyali-082051293/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/Adel-Kayyali" target="_blank" title="GitHub">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </div>
+    
+    <script src="static/script.js"></script>
+</body>
+</html>

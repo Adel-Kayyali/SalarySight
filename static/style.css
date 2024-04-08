@@ -1,0 +1,393 @@
+html {
+    height: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.btn-back {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}
+
+.prediction-result {
+    text-align: center;
+    font-size: 24px;
+    color: #333
+}
+
+.salary-range {
+    font-weight: bold;
+    color: #007bff;
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 20px;
+        width: auto;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
+
+/* Utility classes */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333; /* Icon color */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Icon hover color for LinkedIn */
+}
+
+.social-icons a:hover .fa-github {
+    color: #0077b5; /* Icon hover color for GitHub */
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* This will push the nav-links to the left and the dark-mode-toggle to the right */
+    align-items: center; /* This will vertically center align the items */
+    padding: 0 1rem; /* This adds some space on the left and right sides of the navbar */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Make titles bolder */
+h1 {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Bold for names and important text */
+strong {
+    font-weight: 600;
+}
+
+/* Enhanced paragraph styling for readability */
+p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+/* Increased padding for container */
+.container {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Styling for nav-links */
+.nav-links a {
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar {
+    margin-bottom: 30px;
+    background-color: #008cba; /* A nice blue shade */
+}
+
+/* Hover effect for nav-links */
+.nav-links a:hover {
+    background-color: #0077a2;
+}
+
+/* Dark Theme Styles */
+.dark-mode {
+    background-color: #121212; /* Dark background for the page */
+    color: #ffffff; /* Light text for readability */
+}
+
+/* Style for the container in dark mode to make it stand out */
+.dark-mode .container {
+    background-color: #1e1e1e; /* Dark but lighter than the page background */
+    color: #ffffff; /* Light text for readability */
+}
+
+.dark-mode .predict-form {
+    background-color: #2A2A2A;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Style for form inputs to distinguish them from the form background */
+.dark-mode .predict-form input[type="number"],
+.dark-mode .predict-form select {
+    background-color: #333333; /* Slightly lighter than the form background */
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+/* Style for the submit button to distinguish it from the form */
+.dark-mode .predict-form .btn-submit {
+    background-color: #0d6efd; /* A bright color for contrast */
+    color: #ffffff;
+    border: none;
+}
+
+.dark-mode .predict-form .btn-submit:hover {
+    background-color: #0b5ed7; /* A darker shade for hover state */
+}
+
+.dark-mode .text, .dark-mode p, .dark-mode h1, .dark-mode a {
+    color: #ffffff; /* White text in dark mode */
+}
+
+.dark-mode .social-icons a i {
+    color: #ffffff; /* White social icons in dark mode */
+}
+
+/* This ensures all text within the container is white in dark mode */
+.dark-mode .container * {
+    color: #ffffff;
+}
+
+/* change the color of the text and icons to blue in the navbar */
+.navbar a, .navbar i {
+    color: #007bff;
+}
+
+/* This style will change the button color and hover effect */
+.btn-back {
+    background-color: #007bff; /* The same blue as navbar */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #0056b3; /* A darker shade of blue for hover state */
+    text-decoration: none; /* No underline on hover */
+    color: white; /* Text color stays white on hover */
+}
+
+/* Adjusting the text color of the salary range in the result page */
+.salary-range {
+    color: #007bff; /* The same blue as navbar */
+}
+
+/* Dark mode specific styles */
+.dark-mode .navbar a,
+.dark-mode .navbar i,
+.dark-mode .prediction-result,
+.dark-mode .salary-range {
+    color: white; /* White text for dark mode */
+}
+
+/* To ensure the form is slightly lighter than the background in dark mode */
+.dark-mode .container {
+    background-color: #262626; /* A shade lighter than the background */
+}
+
+/* Hover effect for LinkedIn and GitHub icons in dark mode */
+.dark-mode .social-icons a:hover i {
+    color: #007bff; /* Blue color for icon hover in dark mode */
+}
+
+/* Dark mode specific styles */
+.dark-mode .salary-range {
+    color: #2c79ca;
+}
+
+/* Dark mode specific styles */
+.dark-mode .container h1,
+.dark-mode .container a:link, /* Unvisited link */
+.dark-mode .container a:visited { /* Visited link */
+    color: #509ae9;
+}
+
+/* Adjust link colors on hover and active states if needed */
+.dark-mode .container a:hover,
+.dark-mode .container a:active {
+    color: #0056b3; /* Darker blue color on hover/active for better accessibility */
+}
+
+/* Ensures that the nav-bar links do not change color */
+.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+/* Dark Mode Switch Button */
+.dark-mode-toggle {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    transition: background-color 0.3s;
+}
+
+/* Sun and Moon Icons inside the Button */
+.dark-mode-toggle i {
+    transition: color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Positioning the icons */
+.dark-mode-toggle .fa-sun {
+    left: 75%;
+    color: #333; /* Sun icon color */
+}
+
+.dark-mode-toggle .fa-moon {
+    left: 25%;
+    color: #333; /* Moon icon color */
+}
+
+/* Style when dark mode is active */
+.dark-mode .dark-mode-toggle {
+    background: #333;
+}
+
+.dark-mode .dark-mode-toggle .fa-sun {
+    color: #fde68a; /* Sun icon color in dark mode */
+}
+
+.dark-mode .dark-mode-toggle .fa-moon {
+    color: #f1c40f; /* Moon icon color in dark mode */
+}
+
+/* Styles for dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Specific styles for logos in dark mode */
+.dark-mode-logo {
+    color: #fff !important; /* Override other color styles to ensure it's white in dark mode */
+}
+
+/* Apply dark mode styles to both body and html to ensure full coverage */
+.dark-mode, .dark-mode body, .dark-mode html {
+    background-color: #121212;
+    color: #ffffff; /* This will change the text color to white */
+}
+
+/* Style for the dark mode toggle button */
+.dark-mode-toggle {
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+
+/* Ensure the list items are in a row */
+.nav-links {
+    display: flex;
+    list-style: none; /* Removes the default list styling */
+}
+

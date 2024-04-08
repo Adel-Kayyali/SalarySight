@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SalarySight</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+        <div class="container">
+        <p class="prediction-result">The predicted salary is: <span class="salary-range">{{ prediction }}</span></p>
+        <a href="/" class="btn-back"><strong>Predict another salary</strong></a>
+    </div>
+    <script src="static/script.js"></script>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/adel-kayyali-082051293/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/Adel-Kayyali" target="_blank" title="GitHub">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </div>
+    
+</body>
+</html>
