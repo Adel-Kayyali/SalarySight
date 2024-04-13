@@ -9,4 +9,4 @@ app.register_blueprint(home_blueprint)
 app.register_blueprint(about_blueprint)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
