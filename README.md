@@ -67,9 +67,16 @@ Replace `your_mongodb_connection_string` with your actual MongoDB connection str
 flask run
 ```
 
+---
+
 ### Using Docker
 
 If you prefer to use Docker, make sure you have Docker installed and running on your machine.
+
+The Docker image for SalarySight can be found at [adelkayyali/salarysight on Docker Hub](https://hub.docker.com/r/adelkayyali/salarysight).
+
+To pull and run the Docker image, use the following commands:
+
 
 1. **Build the Docker image:**
 
@@ -80,8 +87,13 @@ docker build -t salarysight .
 2. **Run the Docker container:**
 
 ```bash
-docker run -p 5000:5000 -e MONGO_URI="your_mongodb_connection_string" salarysight
+docker pull adelkayyali/salarysight:latest
+docker run -p 5000:5000 -e MONGO_URI="your_mongodb_uri" adelkayyali/salarysight:latest
 ```
+
+Remember to replace your_mongodb_uri with the actual MongoDB connection string.
+
+
 
 ### Deployment
 
