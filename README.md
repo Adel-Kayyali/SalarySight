@@ -64,6 +64,12 @@ Replace `your_mongodb_connection_string` with your actual MongoDB connection str
 5. **Run the application:**
 
 ```bash
+python app.py
+```
+
+or
+
+```bash
 flask run
 ```
 
